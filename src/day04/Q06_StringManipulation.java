@@ -1,0 +1,33 @@
+package day04;
+
+import java.util.Scanner;
+
+public class Q06_StringManipulation {
+    public static void main(String[] args) {
+        /* String girildiginde ilk iki karakteri haric string return eden java programi yaziniz
+        Ancak ilk karakter 'g' ve ikinci karakteri 'h' ise bu karakterler de return edilsin (gh  -  g  -  h   : 3 durum var)
+
+       ORNEK:          INPUT     OUTPUT
+                       goat        gat
+                      photo        hoto
+                      ghost        ghost
+                      kalem        lem
+
+*/
+        Scanner scan=new Scanner(System.in);
+        System.out.println("enter string");
+String s= scan.next().toLowerCase();
+if(s.startsWith("gh")) {
+            System.out.println(s);
+        }else if(s.startsWith("g")){
+    System.out.println(s.charAt(0)+s.substring(2));{
+
+    }
+        }
+
+
+
+
+
+    }
+}
